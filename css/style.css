@@ -1,5 +1,6 @@
 :root {
     --background-color: rgb(7, 12, 26);
+    font-size: 16px;
 }
 
 body{
@@ -9,4 +10,41 @@ body{
     height: 100vh;
     margin: 0px;
     overflow: hidden;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background:#1e1e24 ;
+}
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+
+#nav-logo-section span {
+    background-color: white;
+    color:rgb(7, 12, 26);
+    border-radius: 3px;
+}
+#nav-logo-section h2 {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.fa-youtube {
+    color: red;
+}
+.fa-facebook {
+    color: rgb(54, 54, 242);
+}
+.fa-instagram {
+    color: pink;
+}
+.fa-whatsapp {
+    color: springgreen;
 }
