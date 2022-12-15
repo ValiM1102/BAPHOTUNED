@@ -23,56 +23,70 @@ body{
     flex-direction: column; */
     height: auto;
     margin: 0px;
-    
+    padding: 0;
     color: whitesmoke;
-    font-family: 'PT Sans',Arial, Helvetica, sans-serif;
 }
-h1 {
+/* h1 {
     font-family: 'Covered By Your Grace', cursive;
 }
 h2, h3, h4, h5, h5, p {
     font-family: 'PT Sans', sans-serif;
-}
+} */
 
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Covered+By+Your+Grace&family=Oswald:wght@300&family=PT+Sans&display=swap'); 
 
 a {
     color: currentColor;
     text-decoration: none;
 }
 header{
-    width: 100%;
-    height: 100vh;
     padding: 0;
     margin: 0;
-    background-image: url(../img/interga.jpg);
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/header.integra.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
 }
-header::after{
-    width: 100%;
-    height: 100vh;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: 2;
+
+
+
+#logo{
+    margin: 0;
+    padding: 0;
+    padding-top: 25vh;
+    text-align: center;
+}
+.text1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
+}
+#logo h1 .white-bk{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+#logo h1 .black-bk{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid black;
+}
+#logo #head-line {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 3rem;
 }
 
 /* buttons */
-.btns {
-    padding-top: 15px;
-}
-#btn1{
-    color: tomato;
-    border: 2px solid whitesmoke;
-}
-#btn2{
-    border: 2px solid tomato;
-}
-.btns button{
+
+#btns button{
+    font-size: 2rem;
     border: none;
     color: whitesmoke;
     border-radius: 5px;
@@ -82,6 +96,13 @@ header::after{
     background: transparent;
     transition: 0.5s ease-in-out;
     position: relative;
+}
+#btn1 {
+    color: tomato;
+    border: 2px solid whitesmoke;
+}
+#btn2{
+    border: 2px solid tomato;
 }
 #btn1::before{
     content: "";
