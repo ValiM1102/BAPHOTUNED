@@ -85,68 +85,22 @@ header{
 
 /* buttons */
 
-#btns button{
-    font-size: 2rem;
-    border: none;
-    color: whitesmoke;
-    border-radius: 5px;
+.btn-1{
+    background-color:#e30004;
+    color:whitesmoke;
+    font-size: 1.2rem;
+    border: 2px solid #e30004;
+    border-radius: 1em;
     font-weight: 900;
-    cursor: pointer;
-    overflow: hidden;
-    background: transparent;
-    transition: 0.5s ease-in-out;
-    position: relative;
+    padding-top: 0.15em;
+
 }
-#btn1 {
-    color: tomato;
+.btn-2{
+    background-color: whitesmoke;
+    color: #e30004;
+    font-size: 1.2rem;
     border: 2px solid whitesmoke;
+    border-radius: 1em;
+    font-weight: 900;
+    padding-top: 0.15em;
 }
-#btn2{
-    border: 2px solid tomato;
-}
-#btn1::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: whitesmoke;
-    transition: 0.5s ease-in-out;
-    z-index: -1;
-    clip-path: circle(0% at 50% 50%);
-}
-#btn2::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: tomato;
-    transition: 0.5s ease-in-out;
-    z-index: -1;
-    clip-path: circle(0% at 50% 50%);
-    
-}
-#btn1:hover{
-    color: tomato;
-}
-#btn2:hover{
-    color: whitesmoke;
-}
-#btn1:hover::before{
-    clip-path: circle(100% at 50% 50%);
-}
-#btn2:hover::before{
-    clip-path: circle(100% at 50% 50%);
-}
-
-
-
-/* MAI JOS SUNT SETARI PENTRU LAPTOPURI */
-/* .proiecte {
-    display: flex;
-    width: 100%;
-    gap: 0.5rem;
-}
-.proiect{
-    border: 2px solid red;
-    box-sizing: border-box;
-    flex-basis: calc(100% / 3);
-
-} */
