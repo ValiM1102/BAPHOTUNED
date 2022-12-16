@@ -15,25 +15,14 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
     background: #e30004;
-    /* background: tomato; */
 }
 body{
     background-color: var(--background-color);
-    /* display: flex;
-    flex-direction: column; */
     height: auto;
     margin: 0px;
     padding: 0;
     color: whitesmoke;
 }
-/* h1 {
-    font-family: 'Covered By Your Grace', cursive;
-}
-h2, h3, h4, h5, h5, p {
-    font-family: 'PT Sans', sans-serif;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Covered+By+Your+Grace&family=Oswald:wght@300&family=PT+Sans&display=swap'); 
 
 a {
     color: currentColor;
@@ -50,12 +39,10 @@ header{
     background-size: cover;
 }
 
-
-
 #logo{
     margin: 0;
     padding: 0;
-    padding-top: 25vh;
+    padding-top: 10vh;
     text-align: center;
 }
 .text1{
@@ -90,7 +77,8 @@ button{
     position: relative;
     z-index: 1;
     border: 0;
-    
+    margin: 0.1em;
+    padding: .1em .4em;
 }
 
 .btn-1{
@@ -99,15 +87,13 @@ button{
     font-size: 1.2rem;
     border-radius: 1em;
     font-weight: 900;
-    padding-top: 0.15em;
 }
 .btn-2{
     background-color: whitesmoke;
     color: #e30004;
     font-size: 1.2rem;
     border-radius: 1em;
-    font-weight: 900;
-    padding-top: 0.15em;   
+    font-weight: 900; 
 }
 
 .btn::after{
@@ -130,4 +116,50 @@ button{
 .btn:hover::after{
     transform: scaleX(1);
     transform-origin: left;
+}
+
+@media screen and (min-width:768px){
+    .text1{
+        font-size: 5rem;
+    }
+    #logo #head-line{
+        font-size: 4rem;
+    }
+    .btn{
+        font-size: 2rem;
+    }
+
+}
+@media screen and (min-width:992px){
+    .text1{
+        font-size: 5.3rem;
+    }
+    #logo #head-line{
+        font-size: 4.3rem;
+    }
+    .btn{
+        font-size: 2.3rem;
+    }
+}
+@media screen and (min-width:1200px){
+    .text1{
+        font-size: 6rem;
+    }
+    #logo #head-line{
+        font-size: 6rem;
+    }
+    .btn{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width:1800px){
+    .text1{
+        font-size: 10rem;
+    }
+    #logo #head-line{
+        font-size: 8rem;
+    }
+    .btn{
+        font-size: 3.5rem;
+    }
 }
