@@ -1,5 +1,5 @@
 :root {
-    --background-color: rgb(7, 12, 26);
+    --background-color: #e30004;
     color: whitesmoke;
     font-size: 16px;
 
@@ -22,6 +22,7 @@ body{
     margin: 0px;
     padding: 0;
     color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -162,4 +163,117 @@ button{
     .btn{
         font-size: 3.5rem;
     }
+}
+
+/* ANULEAZA HOVERU PE MOBIL */
+
+.title{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+/* CAROUSEL */
+.carousel{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active]{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-btn {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.267);
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    font-weight: 700;
+    color: rgba(245, 245, 245, 0.641);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus{
+    color: white;
+    background: rgba(255, 255, 255, 0.359);
+}
+.carousel-btn:focus{
+    outline: 1px solid whitesmoke;
+}
+
+.carousel-btn.prev {
+    left: 1rem;
+}
+.carousel-btn.next {
+    right: 1rem;
+}
+.info-projects{
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: left;
+   
+}
+.info-projects h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+   
+.info-projects p{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    padding-left: 1rem;
+}
+.info-projects a{
+    border-radius: 1em;
+    padding: .125em;
+    background-color: #ffffff35;
+}
+.dark-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e249c;
 }
