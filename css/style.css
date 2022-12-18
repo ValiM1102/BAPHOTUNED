@@ -282,10 +282,10 @@ ul{
         font-size: 6rem;
     }
     .info-projects p{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .carousel-btn{
-        font-size: 6.5rem;
+        font-size: 4rem;
     }
 }
 @media screen and (min-width:1800px){
@@ -299,12 +299,12 @@ ul{
         font-size: 3.5rem;
     }
     .info-projects h3{
-        font-size: 8rem;
+        font-size: 6rem;
     }
     .info-projects p{
-        font-size: 6.5rem;
+        font-size: 3remrem;
     }
     .carousel-btn{
-        font-size: 6.8rem;
+        font-size: 4rem;
     }
 }
