@@ -120,7 +120,7 @@ button{
 }
 
 
-/* ANULEAZA HOVERU PE MOBIL */
+/* project title */
 
 .title{
     margin: 0;
@@ -252,7 +252,9 @@ ul{
     .info-projects p{
         font-size: 3rem;
     }
-
+    .title{
+        font-size: 3.2rem;
+    }
 }
 @media screen and (min-width:992px){
     .text1{
@@ -262,7 +264,7 @@ ul{
         font-size: 4.3rem;
     }
     .btn{
-        font-size: 2.3rem;
+        font-size: 1.3rem;
     }
     .carousel-btn{
         font-size: 6rem;
@@ -276,7 +278,7 @@ ul{
         font-size: 6rem;
     }
     .btn{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .info-projects h3{
         font-size: 6rem;
@@ -287,6 +289,9 @@ ul{
     .carousel-btn{
         font-size: 4rem;
     }
+    .title{
+        font-size: 3.4rem;
+    }
 }
 @media screen and (min-width:1800px){
     .text1{
@@ -296,15 +301,18 @@ ul{
         font-size: 8rem;
     }
     .btn{
-        font-size: 3.5rem;
+        font-size: 2.3rem;
     }
     .info-projects h3{
         font-size: 6rem;
     }
     .info-projects p{
-        font-size: 3remrem;
+        font-size: 3rem;
     }
     .carousel-btn{
         font-size: 4rem;
+    }
+    .title{
+        font-size: 3.7rem;
     }
 }
