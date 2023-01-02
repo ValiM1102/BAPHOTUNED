@@ -2,7 +2,6 @@
     --background-color: #e30004;
     color: whitesmoke;
     font-size: 16px;
-
 }
 html{
     scroll-behavior: smooth;
@@ -135,7 +134,7 @@ button{
 /* CAROUSEL */
 .carousel{
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     position: relative;
 
 }
@@ -235,8 +234,11 @@ ul{
 
 /* sectiune servicii */
 
+.title{
+    height: 8vh;
+}
 .services{
-    height: 93vh;
+    height: 92vh;
     display: grid;
     grid-gap: 0.2rem;
     grid-template-columns: .6fr .4fr .5fr;
@@ -277,6 +279,48 @@ ul{
     background-size: cover;
 }
 
+/* contact */
+#contact-link{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Covered By Your Grace', cursive;
+    height: 8vh;
+}
+
+.contact{
+    height: 92vh;
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "maps maps"
+    "fb insta"
+    ;
+}
+.maps{
+    grid-area: maps;
+    
+}
+.facebook{
+    grid-area: fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagram{
+    grid-area: insta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact img{
+    width: 150px;
+}
 
 @media screen and (max-width:650px) {
     .services{
