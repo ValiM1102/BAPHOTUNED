@@ -233,6 +233,65 @@ ul{
     background-color: #1e1e249c;
 }
 
+/* sectiune servicii */
+
+.services{
+    height: 93vh;
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: .6fr .4fr .5fr;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas: 
+    "t1 t2 t2"
+    "s e m"
+    ;
+}
+.tuning1{
+    grid-area: t1;
+    background-image: url(../img/header.integra.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.tuning2{
+    grid-area: t2;
+    background-image: url(../img/garaj.honda.1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.sudat{
+    grid-area: s;
+    background-image: url(../img/bapho.integra.1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.electrica{
+    grid-area: e;
+    background-image: url(../img/proiect-one.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.mecanica{
+    grid-area: m;
+    background-image: url(../img/proiect-two.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:650px) {
+    .services{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1fr 0.7fr 0.4fr 0.6fr;
+        grid-template-areas: 
+        "t1"
+        "t2"
+        "s"
+        "e"
+        "m"
+        ;
+    }
+}
+
 @media screen and (min-width:768px){
     .text1{
         font-size: 5rem;
