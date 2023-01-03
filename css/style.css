@@ -318,8 +318,41 @@ ul{
     align-items: center;
     justify-content: center;
 }
-.contact img{
-    width: 150px;
+
+.contact .fa-brands{
+    font-size: 5rem;
+    box-shadow: 0.25rem .25rem 0 rgba( 0, 0, 0, .1);
+    transition: transform 1s ease;
+}
+.fa-brands:hover{
+    transform: translateY(-.35em) scale(1.02);
+}
+
+
+.fa-square-facebook{
+    color: rgb(4, 108, 193);
+}
+.fa-instagram{
+    color: rgb(246, 62, 151);
+}
+
+
+/* footer */
+
+footer{
+    background-color: #1e1e24;
+    display: grid;
+    place-items: center;
+    font: 1rem;
+}
+.contact-icons{
+    font-size: 2rem;
+}
+.fa-regular{
+
+}
+.fa-regular:hover{
+    transform: translateY(-.35em) scale(1.02);
 }
 
 @media screen and (max-width:650px) {
