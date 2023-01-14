@@ -295,45 +295,73 @@ ul{
     height: 92vh;
     display: grid;
     grid-gap: 0.2rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
     grid-template-areas: 
-    "maps maps"
-    "fb insta"
-    ;
-}
+    "insta fb mobile"
+    "maps maps maps"
+    ;}
 .maps{
-    grid-area: maps;
-    
+    grid-area: maps;    
 }
 .facebook{
     grid-area: fb;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .instagram{
     grid-area: insta;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.phone{
+    grid-area: mobile;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact .fa-brands{
     font-size: 5rem;
-    box-shadow: 0.25rem .25rem 0 rgba( 0, 0, 0, .1);
-    transition: transform 1s ease;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-.fa-brands:hover{
-    transform: translateY(-.35em) scale(1.02);
+.contact .fa-solid{
+    font-size: 5rem;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-
 
 .fa-square-facebook{
-    color: rgb(4, 108, 193);
+    color: rgb(0, 140, 255);
 }
+.fa-square-facebook:hover{
+    color: rgb(37, 132, 210);
+}
+
+.fa-phone{
+    color: rgb(33, 0, 151);
+}
+.fa-phone:hover{
+    color: rgb(70, 38, 184);
+}
+
 .fa-instagram{
     color: rgb(246, 62, 151);
+}
+.fa-instagram:hover{
+    color: rgb(240, 113, 174);
 }
 
 
@@ -348,10 +376,18 @@ footer{
 .contact-icons{
     font-size: 2rem;
 }
-.fa-regular{
-
+.first-para{
+    padding: 0;
+    margin-bottom: 0;
 }
+.second-para{
+    margin-top: 0;
+}
+
 .fa-regular:hover{
+    transform: translateY(-.35em) scale(1.02);
+}
+#instaPersonal:hover{
     transform: translateY(-.35em) scale(1.02);
 }
 
